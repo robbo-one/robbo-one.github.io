@@ -1,0 +1,17 @@
+#clintEastwood {
+    width: auto;
+    height:auto;
+    padding-left: 290px;
+    background-color: black;
+    
+}
+body { 
+    background-color:black ;
+}
+
+h1 {
+   width: 100%;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+}

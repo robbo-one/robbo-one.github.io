@@ -1,28 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>technical blog sprint 2 </title>
     <meta charset="UTF-8">
    <link href="../blog/blog.css" rel="stylesheet" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat:ital,wght@1,300&family=Orbitron:wght@500&display=swap" rel="stylesheet">
   </head>
+  <style>
+     html{ 
+  background: url(https://cdn.pixabay.com/photo/2016/11/23/15/31/dark-1853545_1280.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  </style>
   
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
-    
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+    <div class="main"> <div id="divnav" class="vertical-menu">
+      <a href="file:///Users/rob/Documents/Dev_Academy_Reflections/robbo-one.github.io/index.html">Home</a>
+      <a href="file:///Users/rob/Documents/Dev_Academy_Reflections/robbo-one.github.io/blog/sprint1-technical.html" class="active">Blog</a>
+      <a href="file:///Users/rob/Documents/Dev_Academy_Reflections/robbo-one.github.io/Look.html">OMG LOOK AT THIS</a>
+      <a href="file:///Users/rob/Documents/Dev_Academy_Reflections/robbo-one.github.io/Harry.html">*You've Won* $10 Million CLICK HERE!</a>
+      <a href="file:///Users/rob/Documents/Dev_Academy_Reflections/robbo-one.github.io/exitpage.html">Exit this way please</a>
+    </div>
+    <h1>What are the differences between relative, absolute, and fixed positioning?</h1>
+    <h2> </h2>
+    <p>Here I hope to break down ‘relative', ‘absolute' and 'fixed positioning'. You may ask yourself “Are we talking about, your great great grandmother relative? No!  Absolutely not. Let’s make sure our 'position' is ‘fixed’ and we are ready to break this down in  simple terms.</p>
+    <h2>Firstly what do these CSS tags look like in our text editor when we are writing code!?</h2>
+    <div> <img src="/Users/rob/Documents/Dev_Academy_Reflections/robbo-one.github.io/blog/images/screen-shot-1.png" id="positions" alt="image of CSS code showing position relative, position fixed and position absolute.">
+      <figcaption>In the above image we are looking at our CSS file page in our text editor (which is linked to our HTML page so they can communicate intructions). First we need the ‘position’ property. (This instructs CSS what we are wanting to change). Then we instruct the behaviour of the position change we want such as:
+      Example .1 has been assigned a ‘relative’ position.
+        Example .2 has been assigned an ‘absolute’ position.
+          Example .3 has been assigned the ‘fixed’ position.</figcaption></div>
+    <h2>Breakdown</h2>
+    <p>In basic terms which ever one of these instructions we assign to our chosen HTML element (inside our CSS file) using the property ‘position’  and then the chosen  instruction, it will then change the position of that HTML element accordingly to whichever one we chose to use (relative, absolute or fixed).</p>
+    <h2>Why may we need to use these?</h2>
+    <p>If we have an element on our website for example an image (img) 
+      then we will need to figure out where we want this to sit on the page and what relationship it has with the other elements on our page around it. We can’t have everything on the page on top of each other (we won’t see what we need to see) or all moving around everywhere when we scroll  (We might get motion sick and vomit all over our laptop, cool).</p>
+    <h2>Here we go!</h2>
+    <p>First off know that HTML elements positions are set to ’static’ by default, nothing special they just follow the flow of the page you have made. You can use top, left, bottom and down  properties to first get the element to where you want on the page if you wish.</p>
+    <div> <img src="https://www.csssolid.com/images/csspositions/css-position-all.png" id="example image of positions"></div>
+    <h3>position: relative;</h3>
+    <p>keeps the element relative (in relation or in proportion to)  to it’s original position. This may sound a little confusing. It basically means that if you were to set the ‘position’ to ‘relative’ and then wanted to add another CSS property because you wanted to move it towards the  top, right, bottom or left then it would move away from the original position in whichever direction you assign it to move. So it’s direction is relative to that original position it was first in before you did anything. Check out this video if that doesn’t make sense, sometimes seeing it happen makes it click!
     </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-    </p>
-    
+    <h3>position: fixed;</h3>
+    <p>is pretty much what you think it is, when assigned it fixes the element exactly where it is. Like virtually using a hammer and nails to secure this element to the exact spot you are happy with so that it won’t move around, even if someone scrolls up or down on the page. *Hint (useful for menu, navigation or footer elements)</p>
+    <h3>position: absolute;</h3>
+    <p>is unfortunately in no way related to vodka! But a cup of tea is recommended whilst reading this article.  Position: absolute;
+      is in the position relative to it’s parent element for example an 'img' within a 'div' element. However! if it has no parent element it is positioned relative to the 'body' of the page and moves along when scrolling.
+      </p>
+      <div><h5>Checklist!</h5>
+        <ol>
+          <li>Design your page layout on paper!</li>
+          <li>Make sure you are in the CSS file.</li>
+          <li>Specify the HTML element you are wanting to adjust.</li>
+          <li>Assign the ‘position’ property first!!!</li>
+          <li>Then choose the instruction of which position you want the element to be.</li>
+          <li>Check your syntax!</li>
+          <li>…and VOILA!!!!! (it worked hopefully)
+            If in doubt take a break and then watch a video on the part you are stuck on. Good Luck!!!</li>
+          </ol>
+      </div>
+      <div>  <iframe 
+        id="video"  
+        width="420" height="315"
+  src="https://www.youtube.com/embed/oRbLowjKVzI"
+   frame-border="2"
+   allowfullscreen></iframe> </div>
     <!-- this is a comment. -->
   
   </body>
+  <footer id="footer">Page created by robbo-one</footer>
 </html>

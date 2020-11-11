@@ -1,0 +1,34 @@
+a{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+}
+.vertical-menu {
+    width: 200px;
+    position: fixed;
+  left: 0;
+  top: 8;
+ margin-top: 2.5em;
+ padding:10px;
+    }
+.vertical-menu a {
+    color:black;
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+}
+.vertical-menu a:hover {
+    background-color: blue;
+}
+.vertical-menu a.active {
+    background-color: red;
+    color: white;
+}
+#footer {
+    color: whitesmoke;
+ padding-bottom: 0px;
+ font-family: 'Courier New', Courier, monospace;
+ bottom: 0;
+ text-align: center;
+ position: fixed;
+ padding-left: 680px;
+}

@@ -1,0 +1,55 @@
+
+body {
+    width: 100%;
+}
+
+#footer {
+    color: white;
+ padding-bottom: 0px;
+ font-family: 'Courier New', Courier, monospace;
+ bottom: 0;
+ text-align: center;
+ position: fixed;
+ padding-left: 76%;
+ font-size: 25px;
+ }
+h2 {
+color: silver;
+width: 400px;
+margin-left: 1050px;
+margin-top: 300px;
+font-size: 30px;
+}
+h3{
+color: silver;
+width: 400px;
+margin-left: 1050px;
+margin-top: 8px;
+font-size: 15px;
+padding: 5px;
+}
+a{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+}
+.vertical-menu {
+    width: 200px;
+    position: fixed;
+  left: 0;
+  top: 0;
+ margin-top: 0;
+ padding:10px;
+    }
+.vertical-menu a {
+    color:whitesmoke;
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+}
+.vertical-menu a:hover {
+    background-color: blue;
+}
+.vertical-menu a.active {
+    background-color: red;
+    color: white;
+}

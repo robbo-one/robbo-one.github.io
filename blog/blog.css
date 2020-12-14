@@ -7,13 +7,12 @@ body {
     padding: 30px;
     text-align:center;
     }
-h1{
-    font-family: 'Bungee Shade', cursive;
-}
-#positions {
-    width:400px;
-    height:auto;
-}
+    h1{
+        font-family: 'Bungee Shade', cursive;
+        color: rgb(55, 55, 245);
+        margin-bottom: 60px;
+        font-size: 4rem;
+    }
 
 h2 {
     font-family: 'Goldman', cursive;

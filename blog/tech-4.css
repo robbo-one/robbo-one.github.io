@@ -7,9 +7,12 @@ body {
     padding: 30px;
     text-align:center;
     }
-h1{
-    font-family: 'Bungee Shade', cursive;
-}
+    h1{
+        font-family: 'Bungee Shade', cursive;
+        color: rgb(55, 55, 245);
+        margin-bottom: 60px;
+        font-size: 4rem;
+    }
 #positions {
     width:400px;
     height:auto;
